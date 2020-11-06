@@ -3,7 +3,7 @@ version: VIII # Could also be a roman numeral or other number, will be concatena
 main_website: https://hackumass.com
 dashboard_url: dashboard.hackumass.com
 logos:
-  primary_path: PandaLogo.png
+  primary_path: HackUMassLogo.png
   nav_path: navlogo.png
 emails:
   donotreply: donotreplytothepandas@hackumass.com

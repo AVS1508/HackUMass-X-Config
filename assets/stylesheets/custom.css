@@ -1,0 +1,6 @@
+/* This is custom CSS applied to every page. */
+
+/* This will change the avatar image for every user. */
+span.avatar {
+    background-image: url(https://hackumass.com/assets/img/redpandaface.png) !important;
+}

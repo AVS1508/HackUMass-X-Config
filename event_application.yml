@@ -1,0 +1,108 @@
+options:
+  hide_event_toc: False
+  hide_mlh_toc: False
+  min_resume_age: 17
+custom_fields:
+ - name: linkedin_url
+   label: 'LinkedIn URL'
+   validate_regex: '\A(https:\/\/)?(www.)?linkedin.com\/in\/\S+\z'
+   validate_error: 'Your Linkedin URL is invalid. Example format: https://linkedin.com/in/yourprofile'
+ - name: github_url
+   label: 'GitHub URL'
+   validate_regex: '\A(https:\/\/)?(www.)?github.com\/\S+\z'
+   validate_error: 'Your Github URL is invalid. Example format: https://github.com/yourprofile'
+ - name: other_url
+   label: 'Other website URL'
+ - name: been_to_hackathon
+   label: 'Have you been to a hackathon before?'
+   type: boolean
+   required: True
+   toggle_field: how_many_hackathons
+ - name: how_many_hackathons
+   label: "About how many hackathons have you attended?"
+   type: select
+   options:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5 or more
+   hidden: True
+ - name: been_to_redpandahacks
+   label: 'Have you previously attended RedPandaHacks?'
+   type: boolean
+   required: True
+   toggle_field: previous_redpandahacks_comments
+ - name: previous_redpandahacks_comments
+   label: "Since you've attended RedPandaHacks before, is there anything new or different you'd like to see at RedPandaHacks I?"
+   type: textarea
+   max_chars: 500
+   hidden: True
+ - name: programming_skills
+   label: "Programming Skills (select all that apply, and if you don't know many that's okay!)"
+   type: multiselect
+   options:
+    - HTML/CSS
+    - Javascript/Node
+    - PHP
+    - SQL
+    - Ruby
+    - Java
+    - Kotlin
+    - Swift
+    - Objective C
+    - C/C++/C#
+    - Python
+ - name: hardware_skills
+   label: 'Hardware Skills (select all that apply)'
+   type: multiselect
+   options:
+    - Embedded Systems
+    - Robotics
+    - Wireless Communications
+    - Circuits
+    - 3D Printing
+ - name: other_skills
+   label: 'If there are any other tech-related skills not listed above that you would like to share, list them below'
+   type: textarea
+   max_chars: 500
+ - name: get_out_of_hum
+   label: 'What would you like to get out of RedPandaHacks? (select all that apply)'
+   type: multiselect
+   options:
+    - Learn more about hardware and hardware hacking
+    - Learn more about web programming
+    - Learn more about AI and machine learning
+    - Learn more about iOS/Android app development
+    - Hack with people you know
+    - Hack with people you don't know
+    - Receive swag items from sponsors
+    - Network with sponsors
+ - name: interested_in_beginner
+   label: "Would you be interested in a 'beginner track' with specialized workshops to help you learn more about hardware and software hacking?"
+   type: boolean
+   required: True
+ - name: how_did_you_hear
+   label: 'How did you hear about RedPandaHacks?'
+   type: multiselect
+   required: True
+   options:
+    - I previously attended RedPandaHacks
+    - From the MLH website
+    - From HackHer413
+    - From another MLH event
+    - Word of mouth
+    - From a teacher
+    - From a friend
+    - Social media
+    - RedPandaHacks t-shirt guerilla marketing
+    - I go to UMass
+    - Other
+ - name: what_hardware
+   label: 'What hardware do you want to see at RedPandaHacks?'
+   type: 'textarea'
+   max_chars: 500
+ - name: fun_question
+   label: "Phew! That application was a bit long, but you're almost done! :D Just for fun... what's your spirit animal?"
+
+

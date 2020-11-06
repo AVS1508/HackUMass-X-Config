@@ -1,0 +1,56 @@
+options:
+
+custom_fields:
+  - name: howred
+    label: "How red is this project compared to other RedPanda Hacks?"
+    type: button
+    max: 20
+    scores:
+      - points: 5
+        description: "Project is not red at all."
+      - points: 10
+        description: "Has some red, but not enough for a true Red Panda"
+      - points: 15
+        description: "Acceptable amount of red"
+      - points: 20
+        description: "Amazing! Very red"
+  - name: works
+    label: "Does the hack work?"
+    type: range
+    max: 50
+    scores:
+      - points: 12.5
+        description: "Project just doesn't work."
+      - points: 25 
+        description: "Project works in some cases."
+      - points: 37.5
+        description: "Project works in most cases, however minor details don't work correctly."
+      - points: 50
+        description: "The project is completely successful and does exactly what it is supposed to do."
+  - name: presentation
+    label: "How well was this project presented?"
+    type: range_restricted
+    step: 7.5
+    max: 30
+    scores: 
+      - points: 7.5
+        description: "Very bad. I didn't even know they were presenting."
+      - points: 15
+        description: "They tried, but didn't really do so well"
+      - points: 22.5
+        description: "OK, but missed some details"
+      - points: 30
+        description: "Amazing job! Very smoothly done with attention to detail."
+  - name: judges_feeling
+    label: "How much do you like Red Pandas?"
+    type: dropdown
+    max: 3
+    scores: 
+      - points: 0
+        description: "I dislike them (1pt because Red Pandas should at least get 1)"
+      - points: 1
+        description: "I like them (2pts)"
+      - points: 2
+        description: "I love them (3pts)"
+      - points: 3
+        description: "They are amazing! (4pts)"

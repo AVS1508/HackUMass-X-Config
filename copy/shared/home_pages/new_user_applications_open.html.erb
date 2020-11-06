@@ -1,0 +1,7 @@
+<h2>Hey, <%= current_user.first_name.capitalize %>!</h2>
+<div class="text-muted">Congratulations on completing the first step to participate in <%= HackumassWeb::Application::HACKATHON_NAME %> <%= HackumassWeb::Application::HACKATHON_VERSION %>!
+In order to participate, you will need to fill out a short application. <b>What better time to start your application than right now?</b>
+</div>
+<div class="d-flex align-items-center pt-5 mt-auto">
+</div>
+<%= link_to 'Apply Now', apply_path,class: 'btn btn-primary' %>

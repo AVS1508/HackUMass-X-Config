@@ -10,6 +10,7 @@ emails:
   contact: pandas@hackumass.com
   email_verification: false
 slack:
+  enabled: false
   subdomain: redpandahacks
 applications:
   mode: 'open'

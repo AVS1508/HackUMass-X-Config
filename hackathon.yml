@@ -1,7 +1,7 @@
-name: RedPandaHacks
-version: I # Could also be a roman numeral or other number, will be concatenated with the hackathon name where necessary
-main_website: https://panda.hackumass.com
-dashboard_url: panda-dashboard.hackumass.com
+name: HackUMass
+version: VIII # Could also be a roman numeral or other number, will be concatenated with the hackathon name where necessary
+main_website: https://hackumass.com
+dashboard_url: dashboard.hackumass.com
 logos:
   primary_path: PandaLogo.png
   nav_path: navlogo.png
@@ -21,14 +21,13 @@ checkin:
   university_email_suffix: pandas.edu
   university_name: UPandas
   university_name_checks:
-    - University of Pandas Amherst
-    - UPandas Amherst
-    - Pandas Amherst
-    - Pandas-Amherst
-    - Pandas at Amherst
-    - Pandas, Amherst
+    - University of Massachusetts Amherst
+    - UMass Amherst
+    - UMass-Amherst
+    - UMass at Amherst
+    - UMass, Amherst
 projects:
-  public: true
+  public: false
   hacking_begins: "Oct 18, 2019 24:00:00"
   hacking_ends: "Oct 20, 2019 10:30:00"
 # List all codes here which can be redeemed on Dashboard to grant permissions
@@ -36,5 +35,5 @@ projects:
 # with more permissions, and can save time and effort of an organizer
 # Format is code:role granted
 codes:
-  panda2020mentor: mentor
-  panda2020admin: admin
+  hackumass2020mentor: mentor
+  6u8n2MSTYN7RUpBx: admin

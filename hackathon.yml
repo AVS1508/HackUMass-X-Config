@@ -18,8 +18,8 @@ applications:
   # flag is enabled.
 checkin:
   # Any participant with this email domain will be counted as from the host university
-  university_email_suffix: pandas.edu
-  university_name: UPandas
+  university_email_suffix: umass.edu
+  university_name: UMass
   university_name_checks:
     - University of Massachusetts Amherst
     - UMass Amherst

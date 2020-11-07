@@ -11,7 +11,7 @@ emails:
   email_verification: false
 slack:
   enabled: false
-  subdomain: redpandahacks
+  subdomain: hackumass
 applications:
   mode: 'open'
   # options: open, waitlist, or closed. defaults to closed.

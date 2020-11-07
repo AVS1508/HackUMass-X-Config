@@ -81,6 +81,14 @@ custom_fields:
    label: "Would you be interested in participating in the beginner's track with specialized workshops to help you learn more about hardware and software hacking?"
    type: boolean
    required: True
+ - name: hardware_interest
+   label: "Are you interested in attending hardware workshops at HackUMass VIII?"
+   type: boolean
+   required: True
+ - name: software_interest
+   label: "Are you interested in attending software workshops at HackUMass VIII?"
+   type: boolean
+   required: True
  - name: how_did_you_hear
    label: 'How did you hear about HackUMass VIII?'
    type: multiselect

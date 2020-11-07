@@ -6,8 +6,8 @@ logos:
   primary_path: HackUMassLogo.png
   nav_path: navlogo.png
 emails:
-  donotreply: donotreplytothepandas@hackumass.com
-  contact: pandas@hackumass.com
+  donotreply: noreply@hackumass.com
+  contact: team@hackumass.com
   email_verification: false
 slack:
   enabled: false

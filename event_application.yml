@@ -28,13 +28,13 @@ custom_fields:
     - 4
     - 5 or more
    hidden: True
- - name: been_to_redpandahacks
-   label: 'Have you previously attended RedPandaHacks?'
+ - name: been_to_hackumass
+   label: 'Have you previously attended HackUMass?'
    type: boolean
    required: True
-   toggle_field: previous_redpandahacks_comments
- - name: previous_redpandahacks_comments
-   label: "Since you've attended RedPandaHacks before, is there anything new or different you'd like to see at RedPandaHacks I?"
+   toggle_field: previous_hackumass_comments
+ - name: previous_hackumass_comments
+   label: "Since you've attended HackUMass before, is there anything new or different you'd like to see at HackUMass VIII?"
    type: textarea
    max_chars: 500
    hidden: True
@@ -67,7 +67,7 @@ custom_fields:
    type: textarea
    max_chars: 500
  - name: get_out_of_hum
-   label: 'What would you like to get out of RedPandaHacks? (select all that apply)'
+   label: 'What would you like to get out of HackUMass VIII? (select all that apply)'
    type: multiselect
    options:
     - Learn more about hardware and hardware hacking
@@ -76,18 +76,17 @@ custom_fields:
     - Learn more about iOS/Android app development
     - Hack with people you know
     - Hack with people you don't know
-    - Receive swag items from sponsors
     - Network with sponsors
  - name: interested_in_beginner
-   label: "Would you be interested in a 'beginner track' with specialized workshops to help you learn more about hardware and software hacking?"
+   label: "Would you be interested in participating in the beginner's track with specialized workshops to help you learn more about hardware and software hacking?"
    type: boolean
    required: True
  - name: how_did_you_hear
-   label: 'How did you hear about RedPandaHacks?'
+   label: 'How did you hear about HackUMass VIII?'
    type: multiselect
    required: True
    options:
-    - I previously attended RedPandaHacks
+    - I previously attended HackUMass
     - From the MLH website
     - From HackHer413
     - From another MLH event
@@ -95,11 +94,10 @@ custom_fields:
     - From a teacher
     - From a friend
     - Social media
-    - RedPandaHacks t-shirt guerilla marketing
     - I go to UMass
     - Other
  - name: what_hardware
-   label: 'What hardware do you want to see at RedPandaHacks?'
+   label: 'What type of online activities would you like to see at HackUMass VIII?'
    type: 'textarea'
    max_chars: 500
  - name: fun_question

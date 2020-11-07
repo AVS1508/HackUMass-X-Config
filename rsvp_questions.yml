@@ -1,8 +1,14 @@
 custom_questions:
  - name: workshops
-   label: "What workshops do you want to see at RedPandaHacks?"
+   label: "What types of workshops do you want to see at HackUMass VIII?"
    type: multiselect
    options:
-    - Introduction to pandas
-    - Bamboo Eating 101
+    - Hardware
+    - Security
+    - Web Development
+    - Game/App Development
+    - Frontend Web Development
+    - Machine Learning/AI
+    - Cloud Computing
+    - Career Development
 

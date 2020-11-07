@@ -5,6 +5,7 @@ dashboard_url: dashboard.hackumass.com
 logos:
   primary_path: HackUMassLogo.png
   nav_path: navlogo.png
+  favicon_url: favicon.ico
 emails:
   donotreply: noreply@hackumass.com
   contact: team@hackumass.com

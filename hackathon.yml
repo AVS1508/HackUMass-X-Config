@@ -31,7 +31,7 @@ checkin:
 projects:
   public: false
   hacking_begins: "Dec 19, 2020 00:00:00"
-  hacking_ends: "Dec 20, 2020 10:30:00"
+  hacking_ends: "Dec 20, 2020 07:00:00"
 # List all codes here which can be redeemed on Dashboard to grant permissions
 # This is useful for judges and mentors who show up to the event and need an account
 # with more permissions, and can save time and effort of an organizer

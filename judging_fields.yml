@@ -1,56 +1,64 @@
+  
 options:
 
 custom_fields:
-  - name: howred
-    label: "How red is this project compared to other RedPanda Hacks?"
-    type: button
+  - name: creativity_of_idea
+    label: "How creative is the idea of the hack?"
+    type: range
     max: 20
     scores:
-      - points: 5
-        description: "Project is not red at all."
-      - points: 10
-        description: "Has some red, but not enough for a true Red Panda"
-      - points: 15
-        description: "Acceptable amount of red"
+      - points: 7
+        description: "Low: A copy of something already out there (i.e. an existing application)"
+      - points: 14
+        description: "Medium: Similar to existing applications but team has some originality and incorporates new solutions."
       - points: 20
-        description: "Amazing! Very red"
-  - name: works
-    label: "Does the hack work?"
+        description: "High: Idea is completely novel and/or is a completely new and creative solution to a problem"
+  - name: technically_challenging
+    label: "How technically challenging was the idea relative to the experience levels of team members?"
     type: range
-    max: 50
+    max: 20
     scores:
-      - points: 12.5
-        description: "Project just doesn't work."
-      - points: 25 
-        description: "Project works in some cases."
-      - points: 37.5
-        description: "Project works in most cases, however minor details don't work correctly."
-      - points: 50
-        description: "The project is completely successful and does exactly what it is supposed to do."
-  - name: presentation
-    label: "How well was this project presented?"
-    type: range_restricted
-    step: 7.5
-    max: 30
+      - points: 7
+        description: "Low: Team members are fully capable and equipped with the background to execute the project idea. The idea was possibly too easy given the experience level."
+      - points: 14
+        description: "Medium: Team members are somewhat experienced in area of project and could've incorporated more challenging aspects; they did not reach out of their comfort zone."
+      - points: 20
+        description: "High: Team members have little to no experience in the tools, technologies, and/or field related to the idea. The idea was overly challenging given the experience level."
+  - name: user_friendly
+    label: "How intuitive is the user experience and overall design of the project?"
+    type: range
+    max: 20
     scores: 
-      - points: 7.5
-        description: "Very bad. I didn't even know they were presenting."
-      - points: 15
-        description: "They tried, but didn't really do so well"
-      - points: 22.5
-        description: "OK, but missed some details"
-      - points: 30
-        description: "Amazing job! Very smoothly done with attention to detail."
-  - name: judges_feeling
-    label: "How much do you like Red Pandas?"
-    type: dropdown
-    max: 3
+      - points: 7
+        description: "Low: The project is metaphorically strung together with duct tape, or has unintuitive design."
+      - points: 14
+        description: "Medium: The project functions but has an imperfect user experience and/or lacks purpose."
+      - points: 20
+        description: "High: The project is intuitive and easy-to-use, with a user of the project easily able to understand how to use it and its purpose."
+  - name: wow_factor
+    label: "How much does the project make you say WOW?"
+    type: range
+    max: 20
     scores: 
-      - points: 0
-        description: "I dislike them (1pt because Red Pandas should at least get 1)"
-      - points: 1
-        description: "I like them (2pts)"
-      - points: 2
-        description: "I love them (3pts)"
+      - points: 7
+        description: "Low: The project didn't spark any wow factors. Unexciting."
+      - points: 14
+        description: "Medium: The project was cool, but could have been more interesting in some aspects. Most projects fall into this category."
+      - points: 20
+        description: "High: The project was extremely impressive."
+  - name: prize_category_fit
+    label: "How well does this project fit into the prize category? (The prize category is under 'Tag')"
+    type: range
+    max: 10
+    scores: 
       - points: 3
-        description: "They are amazing! (4pts)"
+        description: "Low: The project doesn't really fit into the prize category. It doesn't fit at all or fits poorly."
+      - points: 7
+        description: "Medium: The project fits moderately well into the prize category."
+      - points: 10
+        description: "High: The project stands out as a front-runner in this prize category."
+  - name: comments
+    label: "Any additional notes or comments can be entered here. Please keep it short! (max one paragraph)"
+    type: textarea
+    max: 0
+    scores: {}

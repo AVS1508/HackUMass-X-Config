@@ -29,7 +29,7 @@ checkin:
     - UMass at Amherst
     - UMass, Amherst
 projects:
-  public: false
+  public: true
   hacking_begins: "Dec 19, 2020 00:00:00"
   hacking_ends: "Dec 20, 2020 07:00:00"
 # List all codes here which can be redeemed on Dashboard to grant permissions
@@ -37,5 +37,5 @@ projects:
 # with more permissions, and can save time and effort of an organizer
 # Format is code:role granted
 codes:
-  hackumass2020mentor: mentor
-  6u8n2MSTYN7RUpBx: admin
+  aplop1234890asdnjoasda: mentor
+  asdkfuiasdkubasdfubiasd: admin

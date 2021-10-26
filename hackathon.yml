@@ -12,7 +12,7 @@ emails:
   email_verification: false
 slack:
   enabled: true
-  subdomain: hackumass
+  subdomain: hackumass-ix
 applications:
   mode: 'open'
   # options: open, waitlist, or closed. defaults to closed.

@@ -11,7 +11,7 @@ emails:
   contact: team@hackumass.com
   email_verification: false
 slack:
-  enabled: false
+  enabled: true
   subdomain: hackumass
 applications:
   mode: 'open'
@@ -37,5 +37,5 @@ projects:
 # with more permissions, and can save time and effort of an organizer
 # Format is code:role granted
 codes:
-  aplop1234890asdnjoasda: mentor
-  asdkfuiasdkubasdfubiasd: admin
+  rdSWfWZjCKpanZyC: mentor
+  hGMvjgyrVPbxaUBY: admin

@@ -13,6 +13,7 @@ emails:
 slack:
   enabled: true
   subdomain: hackumass-ix
+  message_url_prefix: https://app.slack.com/client/T02FE4HHNA1/C02FPB7TJ0L
 applications:
   mode: 'open'
   # options: open, waitlist, or closed. defaults to closed.

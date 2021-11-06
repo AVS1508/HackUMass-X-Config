@@ -31,7 +31,7 @@ checkin:
     - UMass, Amherst
 projects:
   public: true
-  hacking_begins: "Nov 5, 2021 22:00:00"
+  hacking_begins: "Nov 5, 2021 23:00:00"
   hacking_ends: "Nov 7, 2021 07:00:00"
 # List all codes here which can be redeemed on Dashboard to grant permissions
 # This is useful for judges and mentors who show up to the event and need an account

@@ -3,130 +3,169 @@ options:
   hide_mlh_toc: False
   min_resume_age: 17
 custom_fields:
- - name: vaxx_status
-   label: 'Are you vaccinated?'
-   type: select
-   required: True 
-   options:
-    - Yes, I am vaccinated.
-    - No, but I am willing to get tested prior to attending HackUMass.
- - name: in_person_hacking
-   label: 'Do you plan to hack in-person in the ILC or remotely? NOTE: Judging will take place in-person on Sunday, November 7th. In order to be eligible for a prize, demos must be done in-person.'
-   type: select
-   required: True 
-   options:
-    - Yes, I plan to hack in-person.
-    - No, I plan to hack remotely but will be present for judging. 
- - name: linkedin_url
-   label: 'LinkedIn URL'
-   validate_regex: '\A(https:\/\/)?(www.)?linkedin.com\/in\/\S+\z'
-   validate_error: 'Your Linkedin URL is invalid. Example format: https://linkedin.com/in/yourprofile'
- - name: github_url
-   label: 'GitHub URL'
-   validate_regex: '\A(https:\/\/)?(www.)?github.com\/\S+\z'
-   validate_error: 'Your Github URL is invalid. Example format: https://github.com/yourprofile'
- - name: other_url
-   label: 'Other website URL'
- - name: been_to_hackathon
-   label: 'Have you been to a hackathon before?'
-   type: boolean
-   required: True
-   toggle_field: how_many_hackathons
- - name: how_many_hackathons
-   label: "About how many hackathons have you attended?"
-   type: select
-   options:
-    - 1
-    - 2
-    - 3
-    - 4
-    - 5 or more
-   hidden: True
- - name: been_to_hackumass
-   label: 'Have you previously attended HackUMass?'
-   type: boolean
-   required: True
-   toggle_field: previous_hackumass_comments
- - name: previous_hackumass_comments
-   label: "Since you've attended HackUMass before, is there anything new or different you'd like to see at HackUMass IX?"
-   type: textarea
-   max_chars: 500
-   hidden: True
- - name: programming_skills
-   label: "Programming Skills (select all that apply, and if you don't know many that's okay!)"
-   type: multiselect
-   options:
-    - HTML/CSS
-    - Javascript/Node
-    - PHP
-    - SQL
-    - Ruby
-    - Java
-    - Kotlin
-    - Swift
-    - Objective C
-    - C/C++/C#
-    - Python
- - name: hardware_skills
-   label: 'Hardware Skills (select all that apply)'
-   type: multiselect
-   options:
-    - Embedded Systems
-    - Robotics
-    - Wireless Communications
-    - Circuits
-    - 3D Printing
- - name: other_skills
-   label: 'If there are any other tech-related skills not listed above that you would like to share, list them below'
-   type: textarea
-   max_chars: 500
- - name: get_out_of_hum
-   label: 'What would you like to get out of HackUMass IX? (select all that apply)'
-   type: multiselect
-   options:
-    - Learn more about hardware and hardware hacking
-    - Learn more about web programming
-    - Learn more about AI and machine learning
-    - Learn more about iOS/Android app development
-    - Hack with people you know
-    - Hack with people you don't know
-    - Network with sponsors
- - name: interested_in_beginner
-   label: "Would you be interested in participating in the beginner's track with specialized workshops to help you learn more about hardware and software hacking?"
-   type: boolean
-   required: True
- - name: hardware_interest
-   label: "Are you interested in attending hardware workshops at HackUMass IX?"
-   type: boolean
-   required: True
- - name: software_interest
-   label: "Are you interested in attending software workshops at HackUMass IX?"
-   type: boolean
-   required: True
- - name: how_did_you_hear
-   label: 'How did you hear about HackUMass IX?'
-   type: multiselect
-   required: True
-   options:
-    - I previously attended HackUMass
-    - From the MLH website
-    - From HackHer413
-    - From another MLH event
-    - Word of mouth
-    - From a teacher
-    - From a friend
-    - Social media
-    - I go to UMass
-    - Other
- - name: what_hardware
-   label: 'What type of online activities would you like to see at HackUMass IX?'
-   type: 'textarea'
-   max_chars: 500
- - name: fun_question
-   label: "Phew! That application was a bit long, but you're almost done! :D Just for fun... what's your spirit animal?"
- - name: host_workshop
-   label: "Would you be interested in hosting a workshop? You will have full creative freedom to host a workshop and teach others about the topic of your choice."
-   type: select
-   options:
-    - Yes, I am interested in hosting a workshop.
-    - No, I am not interested. 
+  - name: travel_assistance
+    label: "Would you need travel assistance/accommodations to come to HackUMass?"
+    type: select
+    required: True
+    options:
+      - Yes, I would require some travel assistance/accommodations.
+      - No, I do not require any travel assistance/accommodations.
+  - name: workshop_hosting
+    label: "Would you consider hosting a workshop?"
+    type: select
+    required: True
+    options:
+      - Yes, I am interested in hosting a workshop.
+      - No, I am not interested in hosting a workshop.
+  - name: workshop_topic
+    label: "If applicable, what is your workshop about?"
+  - name: hack_preference
+    label: "Do you prefer front-end, back-end, full-stack, mobile development, or hardware engineering?"
+    type: select
+    required: True
+    options:
+      - Front-end development
+      - Back-end development
+      - Full-stack development
+      - Mobile development
+      - Hardware engineering
+      - None, I am interested in something else
+  - name: vaccination_status
+    label: "Are you fully vaccinated?"
+    type: select
+    required: True
+    options:
+      - Yes, I am fully vaccinated with my primary series.
+      - No, I am not vaccinated with my primary series.
+      - Prefer not to disclose.
+  - name: testing_status
+    label: "If you did not say yes, would you be willing to get tested before?"
+    type: select
+    required: True
+    options:
+      - Yes, I will get tested before the event.
+      - No, I do not plan on getting testing before the event.
+      - Prefer not to disclose.
+  - name: linkedin_url
+    label: "LinkedIn URL"
+    validate_regex: '\A(https:\/\/)?(www.)?linkedin.com\/in\/\S+\z'
+    validate_error: "Your Linkedin URL is invalid. Example format: https://linkedin.com/in/yourprofile"
+  - name: github_url
+    label: "GitHub URL"
+    validate_regex: '\A(https:\/\/)?(www.)?github.com\/\S+\z'
+    validate_error: "Your Github URL is invalid. Example format: https://github.com/yourprofile"
+  - name: other_url
+    label: "Other website URL"
+  - name: team_status
+    label: "Do you have a team?"
+    type: boolean
+    required: True
+  - name: been_to_hackathon
+    label: "Have you been to a hackathon before?"
+    type: boolean
+    required: True
+    toggle_field: how_many_hackathons
+  - name: how_many_hackathons
+    label: "About how many hackathons have you attended?"
+    type: select
+    options:
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5 or more
+    hidden: True
+  - name: been_to_hackumass
+    label: "Have you previously attended HackUMass?"
+    type: boolean
+    required: True
+    toggle_field: previous_hackumass_comments
+  - name: previous_hackumass_comments
+    label: "Since you've attended HackUMass before, is there anything new or different you'd like to see at HackUMass IX?"
+    type: textarea
+    max_chars: 500
+    hidden: True
+  - name: programming_skills
+    label: "Programming Skills (select all that apply, and if you don't know many that's okay!)"
+    type: multiselect
+    options:
+      - HTML/CSS
+      - Javascript/Node.js
+      - TypeScript
+      - PHP
+      - SQL
+      - Ruby
+      - Java
+      - Kotlin
+      - Swift
+      - Objective-C
+      - C/C++/C#
+      - Python
+      - Go
+      - Rust
+  - name: hardware_skills
+    label: "Hardware Skills (select all that apply)"
+    type: multiselect
+    options:
+      - Embedded Systems
+      - Robotics
+      - Wireless Communications
+      - Circuits
+      - 3D Printing
+  - name: other_skills
+    label: "If there are any other tech-related skills not listed above that you would like to share, list them below"
+    type: textarea
+    max_chars: 500
+  - name: get_out_of_hum
+    label: "What would you like to get out of HackUMass X? (select all that apply)"
+    type: multiselect
+    options:
+      - Learn more about hardware and hardware hacking
+      - Learn more about web programming
+      - Learn more about AI and machine learning
+      - Learn more about iOS/Android app development
+      - Hack with people you know
+      - Hack with people you don't know
+      - Receive swag items from sponsors
+      - Network with sponsors
+  - name: interested_in_beginner
+    label: "Would you be interested in participating in a 'beginner's track' with specialized workshops to help you learn more about hardware and software hacking?"
+    type: boolean
+    required: True
+  - name: how_did_you_hear
+    label: "How did you hear about HackUMass?"
+    type: multiselect
+    required: True
+    options:
+      - I previously attended HackUMass
+      - From the MLH website
+      - From Google Cloud event
+      - From HackHer413
+      - From another MLH event
+      - Word of mouth
+      - From a teacher
+      - From a friend
+      - Social Media
+      - HackUMass t-shirt guerilla marketing
+      - I go to UMass
+      - Other
+  - name: hardware_suggestion
+    label: "What type of hardware would you want to see at the event?"
+    type: "textarea"
+    max_chars: 500
+  - name: snacks_suggestion
+    label: "What snacks would you want to see at the event?"
+    type: "textarea"
+    max_chars: 500
+  - name: prizes_suggestion
+    label: "What prizes would you want to see at the event?"
+    type: "textarea"
+    max_chars: 500
+  - name: song_recommendation
+    label: "Any song recommendations for us to play at the event?"
+    type: "textarea"
+    max_chars: 500
+  - name: dietary_restrictions
+    label: "Any dietary restrictions (vegetarian, vegan, allergies, other) we should be aware of?"
+    type: "textarea"
+    max_chars: 500

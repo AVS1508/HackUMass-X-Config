@@ -1,7 +1,7 @@
 name: HackUMass
-version: IX # Could also be a roman numeral or other number, will be concatenated with the hackathon name where necessary
+version: X # Could also be a roman numeral or other number, will be concatenated with the hackathon name where necessary
 main_website: https://hackumass.com
-dashboard_url: dashboard.hackumass.com
+dashboard_url: https://dashboard.hackumass.com
 logos:
   primary_path: HackUMassLogo.png
   nav_path: navlogo.png
@@ -31,8 +31,8 @@ checkin:
     - UMass, Amherst
 projects:
   public: true
-  hacking_begins: "Nov 5, 2021 23:00:00"
-  hacking_ends: "Nov 7, 2021 07:00:00"
+  hacking_begins: "Nov 11, 2022 23:00:00"
+  hacking_ends: "Nov 13, 2022 07:00:00"
 # List all codes here which can be redeemed on Dashboard to grant permissions
 # This is useful for judges and mentors who show up to the event and need an account
 # with more permissions, and can save time and effort of an organizer

@@ -3,6 +3,29 @@ options:
   hide_mlh_toc: False
   min_resume_age: 17
 custom_fields:
+  - name: demographic_id
+    label: "Which of the following best describes you?"
+    required: True
+    type: multiselect
+    options:
+      - Asian Indian
+      - Black or African
+      - Chinese
+      - Filipino
+      - Guamaniam or Chamorro
+      - Hispanic/Latino/Spanish Origin
+      - Japanese
+      - Korean
+      - Middle Eastern
+      - Native American or Alaskan Native
+      - Native Hawaiian
+      - Samoan
+      - Vietnamese
+      - White
+      - Other Asian (Thai, Cambodian, etc.)
+      - Other Pacific Islanders
+      - Prefer not to say
+      - Other
   - name: travel_assistance
     label: "Would you need travel assistance/accommodations to come to HackUMass?"
     type: select
@@ -11,7 +34,7 @@ custom_fields:
       - Yes, I would require some travel assistance/accommodations.
       - No, I do not require any travel assistance/accommodations.
   - name: workshop_hosting
-    label: "Would you consider hosting a workshop?"
+    label: "Are you interested in hosting a workshop?"
     type: select
     required: True
     options:
@@ -20,7 +43,7 @@ custom_fields:
   - name: workshop_topic
     label: "If applicable, what is your workshop about?"
   - name: hack_preference
-    label: "Do you prefer front-end, back-end, full-stack, mobile development, or hardware engineering?"
+    label: "What technologies are you interested in?"
     type: select
     required: True
     options:
@@ -37,15 +60,6 @@ custom_fields:
     options:
       - Yes, I am fully vaccinated with my primary series.
       - No, I am not vaccinated with my primary series.
-      - Prefer not to disclose.
-  - name: testing_status
-    label: "If you did not say yes, would you be willing to get tested before?"
-    type: select
-    required: True
-    options:
-      - Yes, I will get tested before the event.
-      - No, I do not plan on getting testing before the event.
-      - Prefer not to disclose.
   - name: linkedin_url
     label: "LinkedIn URL"
     validate_regex: '\A(https:\/\/)?(www.)?linkedin.com\/in\/\S+\z'
@@ -56,10 +70,6 @@ custom_fields:
     validate_error: "Your Github URL is invalid. Example format: https://github.com/yourprofile"
   - name: other_url
     label: "Other website URL"
-  - name: team_status
-    label: "Do you have a team?"
-    type: boolean
-    required: True
   - name: been_to_hackathon
     label: "Have you been to a hackathon before?"
     type: boolean
@@ -147,8 +157,11 @@ custom_fields:
       - From a friend
       - Social Media
       - HackUMass t-shirt guerilla marketing
-      - I go to UMass
       - Other
+  - name: other_how_did_you_hear
+    label: "If you selected other above, please describe."
+    type: "textarea"
+    max_chars: 100
   - name: hardware_suggestion
     label: "What type of hardware would you want to see at the event?"
     type: "textarea"
@@ -164,8 +177,4 @@ custom_fields:
   - name: song_recommendation
     label: "Any song recommendations for us to play at the event?"
     type: "textarea"
-    max_chars: 500
-  - name: dietary_restrictions
-    label: "Any dietary restrictions (vegetarian, vegan, allergies, other) we should be aware of?"
-    type: "textarea"
-    max_chars: 500
+    max_chars: 100

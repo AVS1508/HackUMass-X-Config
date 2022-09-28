@@ -9,8 +9,8 @@ custom_fields:
     type: multiselect
     options:
       - Asian Indian
-      - Black
       - African
+      - Black
       - Chinese
       - Filipino
       - Guamaniam or Chamorro
@@ -92,7 +92,7 @@ custom_fields:
     required: True
     toggle_field: previous_hackumass_comments
   - name: previous_hackumass_comments
-    label: "Since you've attended HackUMass before, is there anything new or different you'd like to see at HackUMass IX?"
+    label: "Since you've attended HackUMass before, is there anything new or different you'd like to see at HackUMass X?"
     type: textarea
     max_chars: 500
     hidden: True

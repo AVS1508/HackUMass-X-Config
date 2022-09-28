@@ -9,7 +9,8 @@ custom_fields:
     type: multiselect
     options:
       - Asian Indian
-      - Black or African
+      - Black
+      - African
       - Chinese
       - Filipino
       - Guamaniam or Chamorro

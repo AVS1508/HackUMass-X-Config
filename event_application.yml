@@ -157,7 +157,8 @@ custom_fields:
       - From a teacher
       - From a friend
       - Social Media
-      - HackUMass t-shirt guerilla marketing
+      - HackUMass T-Shirt guerilla marketing
+      - HackUMass table tents
       - Other
   - name: other_how_did_you_hear
     label: "If you selected other above, please describe."

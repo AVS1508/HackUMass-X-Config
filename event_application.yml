@@ -34,6 +34,13 @@ custom_fields:
     options:
       - Yes, I would require some travel assistance/accommodations.
       - No, I do not require any travel assistance/accommodations.
+  - name: meal_accommodation
+    label: "Would you require meal accommodations?"
+    type: select
+    required: True
+    options:
+      - Yes, I would require meal accommodations.
+      - No, I do not require meal accommodations.
   - name: workshop_hosting
     label: "Are you interested in hosting a workshop?"
     type: select

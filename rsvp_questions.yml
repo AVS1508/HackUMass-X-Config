@@ -1,6 +1,6 @@
 custom_questions:
  - name: workshops
-   label: "What types of workshops do you want to see at HackUMass VIII?"
+   label: "What types of workshops do you want to see at HackUMass X?"
    type: multiselect
    options:
     - Hardware

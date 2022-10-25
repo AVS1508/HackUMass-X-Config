@@ -27,13 +27,6 @@ custom_fields:
       - Other Pacific Islanders
       - Prefer not to say
       - Other
-  - name: travel_assistance
-    label: "Would you need travel assistance/accommodations to come to HackUMass?"
-    type: select
-    required: True
-    options:
-      - Yes, I would require some travel assistance/accommodations.
-      - No, I do not require any travel assistance/accommodations.
   - name: meal_accommodation
     label: "Would you require meal accommodations?"
     type: select

@@ -179,4 +179,3 @@ custom_fields:
   - name: song_recommendation
     label: "Any song recommendations for us to play at the event?"
     type: "textarea"
-    max_chars: 100

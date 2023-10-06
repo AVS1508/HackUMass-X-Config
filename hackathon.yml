@@ -7,7 +7,6 @@ logos:
   nav_path: navlogo.png
   favicon_url: https://hackumass.com/assets/img/favicon.ico
 emails:
-  donotreply: noreply@hackumass.com
   contact: team@hackumass.com
   email_verification: false
 slack:

@@ -179,7 +179,3 @@ custom_fields:
   - name: song_recommendation
     label: "Any song recommendations for us to play at the event?"
     type: "textarea"
-  - name: consent_to_email
-    label: "Do you consent to receive emails from team@hackumass.com that contain information regarding this event? You will be able to opt-out at anytime through settings."
-    type: boolean
-    required: True
